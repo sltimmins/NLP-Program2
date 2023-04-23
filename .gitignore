@@ -1,2 +1,5 @@
 
 .DS_Store
+rubbish_model/config.json
+rubbish_model/pytorch_model.bin
+rubbish_model/training_args.bin
