@@ -102,4 +102,4 @@ with open('tissue_test.txt') as f:
     
 with open('yarn_test.txt') as f:
     sentences = [remove_quotes(line.strip()) for line in f.readlines()]
-    WSD_test_yarn(sentences
+    WSD_test_yarn(sentences)
