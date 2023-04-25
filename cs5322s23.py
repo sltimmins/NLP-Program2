@@ -3,11 +3,11 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipe
 import pandas as pd
 import re
 
-rubbish_model = 'rubbish_model'
-tissue_model = 'tissue_model'
-yarn_model = 'yarn_model'
+rubbish_model = 'rubbish-word-sense'
+tissue_model = 'tissue-word-sense'
+yarn_model = 'yarn-word-sense'
 
-tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
 
 def remove_quotes(line):
     if line.startswith('"'):
