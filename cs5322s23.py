@@ -92,14 +92,14 @@ def WSD_test_yarn(sentences):
         for p in predictions:
             f.write(f'{p}\n')
             
-with open('rubbish_test.txt') as f:
+with open('rubbish_testdata.txt') as f:
     sentences = [remove_quotes(line.strip()) for line in f.readlines()]
     WSD_test_rubbish(sentences)
     
-with open('tissue_test.txt') as f:
+with open('tissue_testdata.txt') as f:
     sentences = [remove_quotes(line.strip()) for line in f.readlines()]
     WSD_test_tissue(sentences)
     
-with open('yarn_test.txt') as f:
+with open('yarn_testdata.txt') as f:
     sentences = [remove_quotes(line.strip()) for line in f.readlines()]
     WSD_test_yarn(sentences)
